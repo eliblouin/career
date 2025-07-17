@@ -2,4 +2,3 @@ matplotlib
 streamlit
 pandas
 pydeck
-PIL
