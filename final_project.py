@@ -16,6 +16,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import pydeck as pdk
 from PIL import Image
+import os
+mapbox_token = st.secrets["pk.eyJ1IjoiZWJsb3VpbiIsImEiOiJjbWQ2cXdxN2IwYjY0MnFwdHVla2hxbnFyIn0.HxI9jqVfIxRDeaOV6Cn33w"]
 
 
 # CLEAN_DATA(file_name)
@@ -88,6 +90,7 @@ def custom_map(df):
         initial_view_state = view_state,
         layers = [layer],
         tooltip = tool_tip
+        mapbox_key=mapbox_token
     )
     st.pydeck_chart(map)
 
