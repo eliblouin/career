@@ -181,8 +181,8 @@ def website_setup(df, colork = 'yellow'):
             display_bar(dfcity) # bar chart of 'top cities'
     st.dataframe(selected_df, use_container_width=True)
     # [ST3] At least three Streamlit different widgets (sliders, drop-downs, multi-selects, text boxes, etc.)
-    st.switch_page("final_project.py")
-    st.switch_page('type_v._service.py')
+    # st.switch_page("final_project.py")
+    # st.switch_page('type_v._service.py')
 
 def main():
     data_file = 'new_england_airports.csv'
