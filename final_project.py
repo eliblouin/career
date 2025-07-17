@@ -89,8 +89,8 @@ def custom_map(df):
         map_style = 'mapbox://styles/mapbox/streets-v12',
         initial_view_state = view_state,
         layers = [layer],
-        tooltip = tool_tip
-        mapbox_key=mapbox_token
+        tooltip = tool_tip,
+        mapbox_key = mapbox_token
     )
     st.pydeck_chart(map)
 
